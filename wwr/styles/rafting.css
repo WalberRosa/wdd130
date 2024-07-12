@@ -1,0 +1,130 @@
+/* Importing fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Nanum+Gothic+Coding&display=swap');
+
+/* Global variables */
+:root {
+    --primary-color: #0D3E54;
+    --secondary-color: #15668E;
+    --accent1-color: #EFEFEF;
+    --accent2-color: #68B3DF;
+    --heading-font: 'DM Serif Display', serif;
+    --paragraph-font: 'Nanum Gothic Coding', monospace;
+    --nav-bg-color: #3E9AB6;
+    --nav-link-color: #FFFFFF;
+    --nav-hover-link-color: #68B3DF;
+    --nav-hover-bg-color: #4482C5;
+}
+
+/* Body and general styles */
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: var(--accent1-color);
+    color: #333; /* Default text color */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+p {
+    padding: 15px;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color: var(--secondary-color);
+    padding: 10px;
+    text-align: center;
+}
+
+/* Navigation styles */
+nav {
+    background-color: var(--nav-bg-color);
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+    color: var(--nav-link-color);
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-bg-color);
+}
+
+/* Hero section styles */
+.hero {
+    position: relative;
+    overflow: hidden; 
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+/* Article styles */
+article {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 50px 20px 20px;
+    margin-top: -50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+article img {
+    float: right;
+    margin: 0 0 20px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    max-width: 20%; 
+    height: 20%; 
+}
+
+/* Footer styles */
+footer {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
