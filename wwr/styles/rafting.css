@@ -36,17 +36,26 @@ p {
 
 /* Header styles */
 header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
     background-color: var(--secondary-color);
     padding: 10px;
     text-align: center;
 }
 
-/* Navigation styles */
+.logo {
+    grid-column: 1 / 2;
+}
+
 nav {
+    display: flex;
+    justify-content: space-around;
     background-color: var(--nav-bg-color);
     font-size: 1.2rem;
-    display: flex;
-    justify-content: center;
+    grid-column: 2 / 3;
+    max-width: 600px;
+    margin: 1 auto; 
 }
 
 nav a {
@@ -56,19 +65,17 @@ nav a {
     padding: 1rem;
 }
 
-nav a:link, nav a:visited {
-    color: var(--nav-link-color);
-}
-
 nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-bg-color);
 }
 
+
 /* Hero section styles */
 .hero {
     position: relative;
     overflow: hidden; 
+    margin: 20px 0;
 }
 
 .hero img {
@@ -93,7 +100,6 @@ article {
     background-color: rgba(0, 0, 0, 0.6);
     color: #fff;
     padding: 50px 20px 20px;
-    margin-top: -50px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
@@ -103,8 +109,42 @@ article img {
     margin: 0 0 20px 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    max-width: 20%; 
-    height: 20%; 
+    max-width: 20%;
+    height: auto;
+}
+
+/* History and other section styles */
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: var(--accent1-color);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: var(--primary-color);
+}
+
+section img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Adventures section styles */
+section.adventures {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+section.adventures img {
+    flex: 1;
+    min-width: 150px;
+    max-width: 20%;
 }
 
 /* Footer styles */
@@ -117,6 +157,7 @@ footer {
 
 footer p {
     font-size: 0.9rem;
+    margin: 10px 0;
 }
 
 footer a {
@@ -127,4 +168,10 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+footer img {
+    width: 30px;
+    height: auto;
+    margin: 0 5px;
 }
