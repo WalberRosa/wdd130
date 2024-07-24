@@ -55,7 +55,7 @@ nav {
     font-size: 1.2rem;
     grid-column: 2 / 3;
     max-width: 600px;
-    margin: 1 auto; 
+    margin: 0 auto; /* Corrigido para margin: 0 auto */
 }
 
 nav a {
@@ -174,4 +174,82 @@ footer img {
     width: 30px;
     height: auto;
     margin: 0 5px;
+}
+
+/* Additional styles for contact.html */
+
+/* Form styles */
+form {
+    background-color: #fff; /* Assuming white for the form background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+input[type="submit"] {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Map Container */
+.map-container {
+    margin: 20px 0;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Profile section styles */
+.profile {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.profile .employee {
+    text-align: center;
+    width: 30%;
+}
+
+.profile .employee img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.profile .employee figcaption {
+    margin-top: 10px;
+    font-weight: bold;
 }

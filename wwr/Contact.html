@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Rafting Adventures</title>
+    <meta name="description" content="Get in touch with Rafting Adventures for any questions or reservations. Find our contact information, view employee profiles, and submit your inquiries through our easy-to-use form.">
+    <meta name="author" content="Walber Rosa">
+    <link rel="stylesheet" href="styles/rafting.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Nanum+Gothic+Coding&display=swap">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/dryoarlogo.png" alt="Rafting Company Logo">
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <img src="images/river-wide.jpg" alt="Hero Image">
+            <h1>Contact Us</h1>
+        </div>
+        
+        <section>
+            <h2>Company Information</h2>
+            <p><strong>Address:</strong> 123 River Road, Rafting City, RC 12345</p>
+            <p><strong>Phone:</strong> (123) 456-7890</p>
+            <p><strong>Email:</strong> contact@raftingadventures.com</p>
+            
+            <!-- Embedded Google Map -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.2716981985356!2d-73.99316748457878!3d40.73061095969951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259b3fc1b9a5d%3A0x5d7de8b90c1b90!2sNew%20York%2C%20NY%2010014%2C%20USA!5e0!3m2!1sen!2sin!4v1636332127876!5m2!1sen!2sin" width="600" height="450" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+
+        <section>
+            <h2>Meet Our Team</h2>
+            <div class="employee">
+                <img src="images/employee1.jpg" alt="John Doe">
+                <p>John Doe - Rafting Guide</p>
+            </div>
+            <div class="employee">
+                <img src="images/employee2.jpg" alt="Jane Smith">
+                <p>Jane Smith - Operations Manager</p>
+            </div>
+            <div class="employee">
+                <img src="images/employee3.jpg" alt="Emily Johnson">
+                <p>Emily Johnson - Customer Service</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Contact Form</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label>Purpose of Your Message:</label>
+                    <input type="radio" id="general" name="purpose" value="general" required>
+                    <label for="general">General Inquiry</label>
+                    <input type="radio" id="reservation" name="purpose" value="reservation">
+                    <label for="reservation">Reservation Question</label>
+                    <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                    <label for="suggestion">Website Suggestion</label>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Rafting Adventures | Created by Walber Rosa</p>
+        <a href="#">
+            <img src="images/3225194_app_facebook_logo_media_popular_icon.png" alt="Facebook">
+        </a>
+        <a href="#">
+            <img src="images/3225191_app_instagram_logo_media_popular_icon.png" alt="Instagram">
+        </a>
+        <a href="#">
+            <img src="images/3225183_app_logo_media_popular_social_icon.png" alt="Twitter">
+        </a>
+    </footer>
+</body>
+</html>
